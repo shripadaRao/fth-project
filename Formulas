@@ -1,0 +1,14 @@
+For parallel plate capactitor
+ del^2*V =0 
+V= ?
+C = ?
+
+I] calculate V
+II] E = -del*V
+III] D = epi*E
+IV] Dn = rhoS
+V] Q = surface integral(rhoS*dS)
+
+Formulas:
+V = V0*x/d
+C = epislon*S/d
