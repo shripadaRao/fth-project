@@ -19,7 +19,7 @@ function App() {
     setV(Vo*x/d); //logic for V(potential)
   }
 
-  const epislon = 8.8*10^-12
+  const epislon = 8.8*10**-12
   function calculateC() {
     setC(epislon*S/d); //logic for C(apitance)
   }
