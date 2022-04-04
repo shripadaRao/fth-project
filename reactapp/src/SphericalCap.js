@@ -1,35 +1,34 @@
 import React from 'react';
 import { useState } from "react";
 import './App.css';
-//import SphCap from './SphericalCap';
-
-import Title from './Title';
 
 
-function App() {
+function SphCap() {
   const [Vo, setNumber1] = useState();
-  const [d, setNumber2] = useState();
-  const [x, setNumber3] = useState();
-  const [S, setNumber4] = useState();
+  const [r, setNumber2] = useState();
+  const [b, setNumber3] = useState();
+  const [a, setNumber4] = useState();
   const [V, setV] = useState();
   const [C, setC] = useState();
 
+    const kab = (-1*(1/a)- (1/b));
+
   function calculateV() {
-    setV(Vo*x/d); //logic for V(potential)
+    setV(Vo/r*kab - Vo/b*kab ); //logic for V(potential)
   }
 
   const epislon = 8.8*10**-12
+  const pi = 3.14
   function calculateC() {
-    setC(epislon*S/d); //logic for C(apitance)
+    setC(4*pi*epislon/kab); //logic for C(apitance)
   }
 
   return (
-    <div className="App1">
-      <Title/>
+    <div className="App2">
       
       
-    <div>
-        <h2> Parallel Plate Capacitor</h2>
+      <div>
+        <h2> Spherical Capacitor</h2>
     </div>
 
       <div className="variable-inputs">
@@ -46,25 +45,25 @@ function App() {
         <div>
           <input
             type="number" className='box'
-            value={d}
+            value={r}
             onChange={(e) => setNumber2(+e.target.value)}
-            placeholder = 'd'
+            placeholder = 'r'
           />
         </div>
         <div>
           <input
             type="number" className='box'
-            value={x}
+            value={b}
             onChange={(e) => setNumber3(+e.target.value)}
-            placeholder = 'x'
+            placeholder = 'b'
           />
         </div>
         <div>
           <input
             type="number" className='box'
-            value={S}
+            value={a}
             onChange={(e) => setNumber4(+e.target.value)}
-            placeholder = 'S'
+            placeholder = 'a'
           />
         </div>
       </div>
@@ -78,7 +77,5 @@ function App() {
   );
 }
 
-export default App;
-
-
+export default SphCap;
 

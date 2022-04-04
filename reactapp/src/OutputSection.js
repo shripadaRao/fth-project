@@ -1,15 +1,11 @@
 import React from 'react'
+//import App from './App'
+import {V, C} from './App'
 
 export default function OutputSection() {
   return (
-    <div>
-      <h3>Output Section</h3>
-      <div>
-        <h4>Potential V = {}</h4>
-      </div>
-      <div>
-        <h4>Capacitance C = {}</h4>
-      </div>
-    </div>
+    <><h3>Potential V = {V}</h3>
+    <h3>Capacitance C = {C}</h3></>
+      
   )
 }
