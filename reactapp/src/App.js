@@ -14,23 +14,23 @@ function App() {
   const [V, setV] = useState();
   const [C, setC] = useState();
 
-  function calculateV() {
-    setV(Vo*x/d); //logic for V(potential)
+ function calculateV() {
+    setV(Vo*x/d); //formula for V(potential)
   }
 
-  const epislon = 8.8*10**-12
+  const epsilon = 8.8*10**-12
   function calculateC() {
-    setC(epislon*S/d); //logic for C(apitance)
-  }
+    setC(epsilon*S/d); //formula for C(apitance)
+  } 
 
   return (
     <div className="App1">
       <Title/>
-      
-      
-    <div>
-        <h2> Parallel Plate Capacitor</h2>
-    </div>
+      <br></br>
+      <br></br>
+      <h4> Assumptions : One of the plate is at origin with potential 0 and the other at distance 'd', Free Space k=1</h4>
+      <h2> Parallel Plate Capacitor</h2>
+
 
       <div className="variable-inputs">
         

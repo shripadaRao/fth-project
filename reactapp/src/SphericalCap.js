@@ -11,16 +11,16 @@ function SphCap() {
   const [V, setV] = useState();
   const [C, setC] = useState();
 
-    const kab = (-1*(1/a)- (1/b));
+  const kab = (-1*(1/a)- (1/b));
 
   function calculateV() {
     setV(Vo/r*kab - Vo/b*kab ); //logic for V(potential)
   }
 
-  const epislon = 8.8*10**-12
+  const epsilon = 8.8*10**-12
   const pi = 3.14
   function calculateC() {
-    setC(4*pi*epislon/kab); //logic for C(apitance)
+    setC(4*pi*epsilon/kab); //logic for C(apitance)
   }
 
   return (
