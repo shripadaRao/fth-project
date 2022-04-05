@@ -27,9 +27,10 @@ function SphCap() {
     <div className="App2">
       
       
-      <div>
+      
         <h2> Spherical Capacitor</h2>
-    </div>
+        <h4>Assumptions: 'b' is greater than 'a'. Potential at 'b' is 0 and Vo at 'a'.</h4>
+        <h4> Potential varies with r</h4>
 
       <div className="variable-inputs">
         

@@ -28,10 +28,10 @@ function App() {
       <Title/>
       <br></br>
       <br></br>
-      <h4> Assumptions : One of the plate is at origin with potential 0 and the other at distance 'd', Free Space k=1</h4>
+      
       <h2> Parallel Plate Capacitor</h2>
-
-
+      <h4> Assumptions : One of the plate is at origin with potential 0 and the other at distance 'd', Free Space k=1</h4>
+      <h4> Potential varies with x axis</h4>
       <div className="variable-inputs">
         
         <div>
